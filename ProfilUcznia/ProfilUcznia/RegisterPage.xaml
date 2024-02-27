@@ -3,6 +3,24 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProfilUcznia.RegisterPage">
     <ContentPage.Content>
-        
+        <StackLayout BackgroundColor="Gray">
+            <Frame Padding="10" Margin="10" BackgroundColor="#222222" CornerRadius="15" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                </Grid>
+            </Frame>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
