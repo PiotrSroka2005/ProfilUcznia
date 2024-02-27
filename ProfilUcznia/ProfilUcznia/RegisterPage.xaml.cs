@@ -15,6 +15,7 @@ namespace ProfilUcznia
         public RegisterPage()
         {
             InitializeComponent();
+            picker.ItemsSource = PublicClass.Clases;
         }
     }
 }
