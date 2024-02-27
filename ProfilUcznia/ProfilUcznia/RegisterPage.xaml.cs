@@ -40,7 +40,12 @@ namespace ProfilUcznia
                     Class = picker.SelectedItem as UserClass;
                     PublicClass.accounts.Add(new Account(LoginTxT.Text, PasswordTxT.Text, Class));
                     Navigation.PopAsync();
+                    Error.Text = "";
                 }
+            }
+            else
+            {
+                Error.Text = "Hasła nie są takie same!";
             }
         }
     }
