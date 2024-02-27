@@ -26,11 +26,13 @@ namespace ProfilUcznia
                 if (LoginTxT.Text == account.Login && PasswordTxT.Text == account.Password)
                 {
                     Navigation.PushAsync(new UserPage(account));
-
+                    Error.Text = "";
                 }
-            }
-            Error.Text = "Sprawdź dane logowania";
-
+                else
+                {
+                    Error.Text = "Niepoprawny login lub hasło";
+                }
+            }            
         }
 
         protected override void OnAppearing()
