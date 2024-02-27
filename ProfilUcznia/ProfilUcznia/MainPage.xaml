@@ -25,7 +25,7 @@
                 <Entry x:Name="PasswordTxT" IsPassword="True"  Grid.Column="1"  Grid.Row="2"  FontSize="25"  FontAttributes="Bold"  TextColor="White" HorizontalOptions="Center" VerticalOptions="Center"  WidthRequest="200"/>
                 <Label x:Name="Error" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="3" FontSize="25" FontAttributes="Bold" TextColor="Red" HorizontalOptions="Center" VerticalOptions="Center"/>
                 <Button  Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="Zaloguj się" FontSize="20" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="15" BackgroundColor="#222222" WidthRequest="200" HeightRequest="60" HorizontalOptions="Center" VerticalOptions="Center"/>
-                <Button  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Text="Zarejestruj się" FontSize="20" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="15" BackgroundColor="#222222" WidthRequest="200" HeightRequest="60" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Button Clicked="Register" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Text="Zarejestruj się" FontSize="20" TextColor="White" BorderColor="White" BorderWidth="1" CornerRadius="15" BackgroundColor="#222222" WidthRequest="200" HeightRequest="60" HorizontalOptions="Center" VerticalOptions="Center"/>
             </Grid>
         </Frame>
     </StackLayout>
