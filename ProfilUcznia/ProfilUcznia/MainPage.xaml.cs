@@ -33,6 +33,14 @@ namespace ProfilUcznia
 
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            LoginTxT.Text = string.Empty;
+            PasswordTxT.Text = string.Empty;
+            Error.Text = string.Empty;
+        }
+
         private void Register(object sender, EventArgs e)
         {
             Navigation.PushAsync(new RegisterPage());
