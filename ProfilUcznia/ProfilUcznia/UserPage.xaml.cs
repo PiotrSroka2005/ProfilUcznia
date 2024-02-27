@@ -20,7 +20,7 @@ namespace ProfilUcznia
 
         private void LogOut(object sender, EventArgs e)
         {
-            Navigation.PopAsync();
+            Navigation.PopAsync(); 
         }
     }
 }
