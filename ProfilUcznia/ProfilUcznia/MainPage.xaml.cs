@@ -19,6 +19,20 @@ namespace ProfilUcznia
             PublicClass.accounts.Add(new Account("Piotr", "1234", PublicClass.Clases[0]));            
         }
 
+        private void Login(object sender, EventArgs e)
+        {
+            foreach (var account in PublicClass.accounts)
+            {
+                if (LoginTxT.Text == account.Login && PasswordTxT.Text == account.Password)
+                {
+                    Navigation.PushAsync(new UserPage(account));
+
+                }
+            }
+            Error.Text = "Sprawdź dane logowania";
+
+        }
+
         private void Register(object sender, EventArgs e)
         {
             Navigation.PushAsync(new RegisterPage());
