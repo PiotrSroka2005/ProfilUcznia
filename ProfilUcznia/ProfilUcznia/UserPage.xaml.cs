@@ -12,9 +12,15 @@ namespace ProfilUcznia
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class UserPage : ContentPage
     {
-        public UserPage()
+        public UserPage(Account acc)
         {
             InitializeComponent();
+            WebView.Source = acc.Class.Path;
+        }
+
+        private void LogOut(object sender, EventArgs e)
+        {
+            Navigation.PopAsync();
         }
     }
 }
